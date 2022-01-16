@@ -31,7 +31,7 @@ node seeder -d
 node seeder -i
 ```
 
-## Demo
+# Documnetation
 
 The API is live at [https://procamp-api.herokuapp.com](https://procamp-api.herokuapp.com)
 
