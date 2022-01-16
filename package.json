@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "dotenv": "^11.0.0",
@@ -30,7 +31,6 @@
     "xss-clean": "^0.1.1"
   },
   "devDependencies": {
-    "colors": "^1.4.0",
     "nodemon": "^2.0.15"
   }
 }
