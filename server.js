@@ -50,7 +50,6 @@ const limiter = rateLimit({
 })
 app.use(limiter) // Apply the rate limiting middleware to all requests
 app.use(cors()) //for cross origin resource security
-git 
 app.use(express.static(path.join(__dirname, "public")))
 
 //mount routers
