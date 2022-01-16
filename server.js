@@ -8,10 +8,7 @@ const fileUpload = require("express-fileupload")
 const path = require("path")
 const cookieParser = require('cookie-parser');
 const mongoSanitize = require('express-mongo-sanitize');
-const helmet = require("helmet");
-const xss = require('xss-clean')
 const rateLimit = require('express-rate-limit')
-const hpp = require('hpp');
 const cors = require('cors')
 
 //load env vars
@@ -37,11 +34,8 @@ app.use(express.json())
 //File Uploading
 app.use(fileUpload())
 
-//Security middlewares: sanitize data and ensure security
+//sanitize data and prevent nosql injection
 app.use(mongoSanitize())
-app.use(helmet());
-app.use(xss())
-app.use(hpp())
 const limiter = rateLimit({
     windowMs: 15 * 60 * 1000, // 15 minutes
     max: 100, // Limit each IP to 100 requests per `window` (here, per 15 minutes)
