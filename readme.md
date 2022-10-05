@@ -139,7 +139,7 @@ Creating the backend for a bootcamp directory website. All of the functionality 
 - Push to Github
 - Push to heroku (for now, in the future I will deploy to my own domain and host)
 
-## Code Related Suggestions
+## Code Related Techniques
 - NPM scripts for dev and production env
 - Config file for important constants
 - Use controller methods with documented descriptions/routes
